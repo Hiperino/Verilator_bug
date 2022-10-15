@@ -12,4 +12,4 @@ make: Opuszczenie katalogu '/home/users/kzem/4-Programming/Verilator_bug/obj_dir
  --- RUNNING ---
 %Warning: previous dump at t=0, requesting t=0, dump call ignored
 rst: 0, varB: 1
-- bug_tb.sv:43: Verilog $finish
+- bug_tb.sv:37: Verilog $finish

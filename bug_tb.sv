@@ -1,7 +1,4 @@
-
-`timescale 1ns/10ps
-
-module acq_ctrl_tb;
+module bug_tb;
 
 	localparam CLOCK_HALF_PERIOD = 5;
 	localparam CLOCK_CYCLE = 10;
@@ -24,7 +21,6 @@ module acq_ctrl_tb;
 
 		rst = 1;
 		clk = 0;
-
 		varA = 0;
 		varC = 0;
 		varB = 0;
