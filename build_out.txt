@@ -1,0 +1,15 @@
+make: Wejście do katalogu '/home/users/kzem/4-Programming/Verilator_bug/obj_dir'
+ccache g++  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -DVL_TIME_CONTEXT  -fcoroutines -std=gnu++14 -Os -c -o verilated.o /usr/local/share/verilator/include/verilated.cpp
+ccache g++  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -DVL_TIME_CONTEXT  -fcoroutines -std=gnu++14 -Os -c -o verilated_vcd_c.o /usr/local/share/verilator/include/verilated_vcd_c.cpp
+ccache g++  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -DVL_TIME_CONTEXT  -fcoroutines -std=gnu++14 -Os -c -o verilated_timing.o /usr/local/share/verilator/include/verilated_timing.cpp
+/usr/bin/perl /usr/local/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vbug_tb.cpp Vbug_tb___024root__DepSet_h8a732dd4__0.cpp Vbug_tb___024root__DepSet_hc34b74df__0.cpp Vbug_tb__main.cpp Vbug_tb__Trace__0.cpp Vbug_tb___024root__Slow.cpp Vbug_tb___024root__DepSet_h8a732dd4__0__Slow.cpp Vbug_tb___024root__DepSet_hc34b74df__0__Slow.cpp Vbug_tb__Syms.cpp Vbug_tb__Trace__0__Slow.cpp > Vbug_tb__ALL.cpp
+echo "" > Vbug_tb__ALL.verilator_deplist.tmp
+ccache g++  -I.  -MMD -I/usr/local/share/verilator/include -I/usr/local/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -DVL_TIME_CONTEXT  -fcoroutines -std=gnu++14 -Os -c -o Vbug_tb__ALL.o Vbug_tb__ALL.cpp
+Archive ar -rcs Vbug_tb__ALL.a Vbug_tb__ALL.o
+g++    verilated.o verilated_vcd_c.o verilated_timing.o Vbug_tb__ALL.a      -o Vbug_tb
+rm Vbug_tb__ALL.verilator_deplist.tmp
+make: Opuszczenie katalogu '/home/users/kzem/4-Programming/Verilator_bug/obj_dir'
+ --- RUNNING ---
+%Warning: previous dump at t=0, requesting t=0, dump call ignored
+rst: 0, varB: 1
+- bug_tb.sv:43: Verilog $finish
